@@ -1,0 +1,15 @@
+{
+  "host": "imap.gmail.com",
+  "intervalTimer": 5,
+  "keywords": [
+    "Notification",
+    "UPS"
+  ],
+  "numberOfEmailsToSearch": 50,
+  "lastReloadDate": "2020-03-09",
+  "lastReloadTime": "10:45:22",
+  "password": "Primordial702",
+  "port": "993",
+  "protocol": "imap",
+  "username": "rossi.alex0260@gmail.com"
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.ews-java-api:ews-java-api:2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.ews-java-api/ews-java-api/2.0/6f76a4ad706b5aa6534a48ea098b257de6b47627/ews-java-api-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.ews-java-api/ews-java-api/2.0/400ceef1178686f680dcb6dda3b93252fe4cf885/ews-java-api-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
