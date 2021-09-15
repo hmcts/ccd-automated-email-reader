@@ -1,15 +1,1 @@
-{
-  "host": "imap.gmail.com",
-  "intervalTimer": 5,
-  "keywords": [
-    "Notification",
-    "UPS"
-  ],
-  "numberOfEmailsToSearch": 50,
-  "lastReloadDate": "2020-03-09",
-  "lastReloadTime": "10:45:22",
-  "password": "Primordial702",
-  "port": "993",
-  "protocol": "imap",
-  "username": "rossi.alex0260@gmail.com"
-}
+{"lastReloadTime":"12:06:56","password":"Primordial702","protocol":"imap","keywords":["Notification","UPS"],"port":"993","host":"imap.gmail.com","lastReloadDate":"2021-09-15","intervalTimer":5,"numberOfEmailsToSearch":50,"username":"rossi.alex0260@gmail.com"}

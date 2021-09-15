@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ccd-automated-email-reader.iml" filepath="$PROJECT_DIR$/.idea/ccd-automated-email-reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ccd-automated-email-reader.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ccd-automated-email-reader.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ccd-automated-email-reader.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ccd-automated-email-reader.test.iml" />
     </modules>
   </component>
 </project>

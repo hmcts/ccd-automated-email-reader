@@ -164,7 +164,8 @@ public class EmailReciever {
 
             for (int j = 0; j < keywords.size(); j++) {
 
-                if (subject.contains(keywords.get(j)) & (sentDate.isAfter(lastReloadDate))) {
+                     //& (sentDate.isAfter(lastReloadDate)))
+                if (keywords.get(j).contains(subject)) {
                     Address[] fromAddress = msg.getFrom();
                     String from = fromAddress[0].toString();
                     String toList = parseAddresses(msg
@@ -205,6 +206,7 @@ public class EmailReciever {
         }
 
         System.out.println("[Completed Search of Emails!]");
+
         if(subjects.size() != 0) {
             String[] subjectsToFormat = new String[subjects.size()];
             for (int i = 0; i < subjects.size(); i++) {
