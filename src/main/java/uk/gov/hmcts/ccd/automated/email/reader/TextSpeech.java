@@ -9,7 +9,7 @@ public class TextSpeech {
 
     public static void main(String[] args) {
 
-        String[] subjects = args;
+        //String[] subjects = args;
         try {
             // Set property as Kevin Dictionary
             System.setProperty(
@@ -32,12 +32,12 @@ public class TextSpeech {
             synthesizer.enumerateQueue();
             // Resume Synthesizer
             synthesizer.resume();
-            System.out.println(subjects[1]);
+
             //for (int i = 0; i > subjects.length; i++) {
                 // Speaks the given text
                 // until the queue is empty.
                 synthesizer.speakPlainText(
-                    args[0], null);
+                    "This is a test", null);
                 synthesizer.waitEngineState(
                     Synthesizer.QUEUE_EMPTY);
 

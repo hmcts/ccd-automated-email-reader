@@ -146,7 +146,7 @@ public class EmailReciever {
                 EmailReciever receiver = new EmailReciever();
                 receiver.downloadEmails(protocol, host, port, userName, password, lastReloadDate, lastReloadTime, keywords);
                 updateReloadValues.updateReloadValues();
-                Thread.sleep(interval * 1000 * 60);
+                Thread.sleep(interval * 1000);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
