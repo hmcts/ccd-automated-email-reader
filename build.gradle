@@ -1,13 +1,24 @@
 plugins {
-    id 'idea'
-    id 'java'
-    id 'checkstyle'
-    id 'uk.gov.hmcts.java' version '0.12.34'
+  id 'idea'
+  id 'java'
+  id 'checkstyle'
+  id 'pmd'
+  id 'uk.gov.hmcts.java' version '0.12.34'
 }
 
 apply plugin: 'java'
 
-dependencies {
+group = 'uk.gov.hmcts.reform'
+version = '0.0.1'
 
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(17)
+  }
+}
+
+
+dependencies {
+  implementation group: 'com.github.hmcts.java-logging', name: 'logging', version: '6.0.1'
 }
 
