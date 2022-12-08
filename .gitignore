@@ -1,0 +1,21 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode
+
+### Gradle
+.gradle/
+out/
+build/
+/bin/
+
+### MacOS
+.DS_Store
