@@ -1,0 +1,11 @@
+{
+  "protocol": "imap",
+  "host": "imap.gmail.com",
+  "port": "993",
+  "timeout": 5000,
+  "mailDebug": false,
+  "mailDebugAuth": false,
+  "lastReloadDate": "2023-01-00",
+  "lastReloadTime": "14:27:57",
+  "intervalTimer": 30
+}
