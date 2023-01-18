@@ -1,9 +1,8 @@
 plugins {
+  id 'application'
   id 'idea'
   id 'java'
-  id 'checkstyle'
-  id 'pmd'
-  id 'uk.gov.hmcts.java' version '0.12.34'
+  id 'uk.gov.hmcts.java' version '0.12.37'
 }
 
 apply plugin: 'java'
@@ -17,8 +16,49 @@ java {
   }
 }
 
+def versions = [
+  jackson             : '2.14.1',
+  lombok              : '1.18.24',
+  springFramework     : '6.0.2',
+  simpleJavaMail      : '7.5.1'
+]
 
 dependencies {
+  annotationProcessor group: 'org.projectlombok', name: 'lombok', version: versions.lombok
+  implementation group: 'org.projectlombok', name: 'lombok', version: versions.lombok
+  implementation group: 'org.apache.httpcomponents.client5', name: 'httpclient5', version: '5.2.1'
+
+  implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: versions.jackson
+  implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: versions.jackson
+  implementation group: 'org.springframework', name: 'spring-beans', version: versions.springFramework
+  implementation group: 'org.springframework', name: 'spring-context', version: versions.springFramework
+
+  implementation group: 'org.json', name: 'json', version: '20220924'
+  implementation group: 'org.yaml', name: 'snakeyaml', version: '1.33'
+  implementation group: 'org.simplejavamail', name: 'simple-java-mail', version: versions.simpleJavaMail
+  implementation group: 'org.simplejavamail', name: 'outlook-module', version: versions.simpleJavaMail
+
   implementation group: 'com.github.hmcts.java-logging', name: 'logging', version: '6.0.1'
+
+  implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.5'
+
 }
 
+repositories {
+  mavenLocal()
+  mavenCentral()
+  maven { url 'https://jitpack.io' }
+}
+
+idea {
+  module {
+    // config to allow Intellij to mark test source and resource files correctly to help linting tools
+  }
+}
+
+tasks.named('jar') {
+  manifest {
+    attributes('Implementation-Title': project.name,
+      'Implementation-Version': project.version)
+  }
+}
