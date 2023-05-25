@@ -2,7 +2,9 @@ plugins {
   id 'application'
   id 'idea'
   id 'java'
-  id 'uk.gov.hmcts.java' version '0.12.37'
+  id 'uk.gov.hmcts.java' version '0.12.43'
+  id 'org.springframework.boot' version '3.1.0'
+  id 'io.spring.dependency-management' version '1.1.0'
 }
 
 apply plugin: 'java'
@@ -24,6 +26,8 @@ def versions = [
 ]
 
 dependencies {
+  implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '3.1.0'
+
   annotationProcessor group: 'org.projectlombok', name: 'lombok', version: versions.lombok
   implementation group: 'org.projectlombok', name: 'lombok', version: versions.lombok
   implementation group: 'org.apache.httpcomponents.client5', name: 'httpclient5', version: '5.2.1'

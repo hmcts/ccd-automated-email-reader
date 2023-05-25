@@ -1,4 +1,4 @@
-package helper;
+package uk.gov.hmcts.reform.automated.email.reader.helper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
